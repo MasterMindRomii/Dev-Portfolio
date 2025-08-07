@@ -1,6 +1,6 @@
 ## My Portfolio
 
-A website to showcase my projects and experience in software engineering and machine learning.
+A website to showcase my data analytics and visualization projects using Python, SQL, and Power BI to extract insights and solve real-world problems.
 
 ### Features:
 - About Me
