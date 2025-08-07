@@ -11,7 +11,7 @@ export default function Navigation() {
     { name: 'Experience', href: '#experience' },
     { name: 'Projects', href: '#projects' },
     { name: 'Blogs', href: '#blogs' },
-    { name: 'GitHub', href: 'https://github.com/omkar-79', external: true },
+    { name: 'GitHub', href: 'https://github.com/MasterMindRomii', external: true },
   ];
 
   const menuVariants = {

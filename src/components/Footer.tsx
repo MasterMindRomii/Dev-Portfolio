@@ -1,23 +1,23 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaMedium, FaEnvelope, FaPhone } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaMedium, FaEnvelope, FaPhone, FaYoutube } from 'react-icons/fa';
 
 const socialLinks = [
   {
     name: 'GitHub',
-    url: 'https://github.com/omkar-79',
+    url: 'https://github.com/MasterMindRomii',
     icon: FaGithub
   },
   {
     name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/omkar-balekundri/',
+    url: 'https://www.linkedin.com/in/heyyromii/',
     icon: FaLinkedin
   },
   {
-    name: 'Medium',
-    url: 'https://medium.com/@omkarbalekundri77',
-    icon: FaMedium
+    name: 'Youtube',
+    url: 'https://www.youtube.com/@MasterMindRomii',
+    icon: FaYoutube
   }
 ];
 
@@ -37,18 +37,18 @@ export default function Footer() {
             </h3>
             <div className="text-gray-300 space-y-2">
               <a 
-                href="mailto:omkarbalekundri77@gmail.com"
+                href="mailto:romigupta1875@gmail.com"
                 className="flex items-center gap-2 hover:text-[#49c5b6] transition-colors"
               >
                 <FaEnvelope />
-                <span>omkarbalekundri77@gmail.com</span>
+                <span>Romigupta1875@gmail.com</span>
               </a>
               <a 
-                href="tel:+17039457493"
+                href="tel:99xxxxx"
                 className="flex items-center gap-2 hover:text-[#49c5b6] transition-colors"
               >
                 <FaPhone />
-                <span>+1 (703) - 945-7493</span>
+                <span>+91 1234567890</span>
               </a>
             </div>
           </motion.div>

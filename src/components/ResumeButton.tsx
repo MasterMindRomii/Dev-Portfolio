@@ -6,7 +6,7 @@ export default function ResumeButton() {
   return (
     <div className="flex justify-center py-16 ">
       <motion.a
-        href="https://drive.google.com/file/d/1360y6TW2Ax0g3FNfWrFoe3SlcLLGl5lY/view?usp=sharing" // Replace with your resume link
+        href="mailto: romigupta1875@gmail.com" // Replace with your resume link
         target="_blank"
         rel="noopener noreferrer"
         className="backdrop-blur-md bg-white/10 px-8 py-4 rounded-full border border-white/20 shadow-lg 
@@ -17,7 +17,7 @@ export default function ResumeButton() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        View My Resume
+        Request Resume
       </motion.a>
     </div>
   );

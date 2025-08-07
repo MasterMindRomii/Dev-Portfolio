@@ -36,10 +36,10 @@ export default function Hero() {
     <div ref={vantaRef} className="w-full h-screen relative">
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center font-poppins">
         <h1 className="text-4xl md:text-8xl mb-4 text-white" style={{ textShadow: "0 0 10px rgba(0,0,0,0.5)" }}>
-          Omkar Balekundri
+          Romi Gupta
         </h1>
         <p className="text-l md:text-xl text-gray-300">
-          Software Engineering and Machine Learning
+          Data Analytics and Engineering 
         </p>
       </div>
     </div>

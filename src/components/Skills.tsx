@@ -9,16 +9,50 @@ interface Skill {
 
 const skills: Skill[] = [
   {
-    category: "Programming Languages",
-    items: ["Python", "JavaScript", "TypeScript", "Java", "C++", "SQL"]
+    category: "Programming & Analysis",
+    items: ["Python", "NumPy", "Pandas", "Matplotlib", "Basic ML"]
   },
   {
-    category: "Frameworks & Libraries",
-    items: ["React.js", "Next.js", "Node.js", "Express.js", "Django", "TensorFlow", "PyTorch", "Scikit Learn"]
+    category: "Databases & SQL",
+    items: [
+      "MySQL",
+      "Subqueries",
+      "Joins",
+      "Window Functions",
+      "CTEs",
+      "Aggregate Functions"
+    ]
   },
   {
-    category: "Tools & Platforms",
-    items: ["Git", "Docker", "AWS", "MongoDB", "PostgreSQL", "Linux", "REST APIs", "Firebase"]
+    category: "Business Intelligence",
+    items: [
+      "Power BI",
+      "Power Query",
+      "DAX Functions",
+      "Data Modeling",
+      "Time Intelligence"
+    ]
+  },
+  {
+    category: "Excel & Spreadsheet Tools",
+    items: [
+      "Pivot Table",
+      "Power Pivot",
+      "Charts & Graphs",
+      "Conditional Formatting",
+      "Advanced Excel Functions"
+    ]
+  },
+  {
+    category: "Data Engineering Basic",
+    items: [
+      "Snowflake",
+      "BigQuery",
+      "Airflow",
+      "Jira",
+      "ETL Pipeline Processes",
+      "Google Cloud Platform"
+    ]
   }
 ];
 
@@ -68,12 +102,12 @@ export default function Skills() {
               {skill.category}
             </h3>
             <div className="flex flex-wrap gap-2 justify-center">
-              {skill.items.map((skill) => (
+              {skill.items.map((item) => (
                 <span
-                  key={skill}
+                  key={item}
                   className="bg-[#383F42] px-3 py-1 rounded-full text-sm text-gray-200"
                 >
-                  {skill}
+                  {item}
                 </span>
               ))}
             </div>

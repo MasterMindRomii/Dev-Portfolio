@@ -10,8 +10,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Omkar",
-  description: "Portfolio of Omkar Balekundri",
+  title: "Romi",
+  description: "Portfolio of Romi Gupta",
 };
 
 export default function RootLayout({

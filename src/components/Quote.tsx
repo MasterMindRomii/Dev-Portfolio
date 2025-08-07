@@ -17,7 +17,7 @@ export default function Quote() {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          A curious software engineer who is excited to develop projects that solve
+          A curious data engineer who is excited to develop projects that solve real-world problems.
         </motion.span>
         <motion.span
           className="block"
@@ -25,7 +25,7 @@ export default function Quote() {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-           real-world problems. Looking to contribute and work in backend and
+          Looking to contribute and work in analytics and machine learning field.
         </motion.span>
         <motion.span
           className="block"
@@ -33,7 +33,7 @@ export default function Quote() {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          machine learning (NLP, LLM, GenAI) field.
+          
         </motion.span>
       </motion.p>
     </div>
