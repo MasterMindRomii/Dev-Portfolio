@@ -3,14 +3,14 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image, { StaticImageData } from 'next/image';
-import mykerchiefImage from '@/assets/mykerchief.jpg';
-import varangio from '@/assets/Varangio.jpg';
-import foodstack from '@/assets/FoodStack.png';
-import parkinsons from '@/assets/parkinsons.png';
-import news_app from '@/assets/news.png';
-import medcompass from '@/assets/medcompass.png';
-import droneit from '@/assets/droneit.jpg';
-import emailbuddy from '@/assets/emailbuddylogo.png';
+
+// Import your actual project images
+import carprice from '@/assets/carprice.jpg';
+import hotel from '@/assets/hotel.jpg';
+import creditcard from '@/assets/creditcard.jpg';
+import olympics from '@/assets/olympics.jpg';
+import customerperf from '@/assets/customerperf.jpg';
+import financial from '@/assets/financial.jpg';
 
 interface Project {
   id: number;
@@ -18,81 +18,71 @@ interface Project {
   description: string;
   image: StaticImageData;
   tools: string[];
-  category: 'software' | 'ml';
+  category:  'analytics' | 'bi' | 'ml';
   link: string;
 }
 
 const projects: Project[] = [
   {
     id: 1,
-    name: "Reservation App",
-    description: "A web application to reserve sports facilities like tennis court, basketball, and more",
-    image: mykerchiefImage, // Add your image path
-    tools: ["React", "Node.js", "MongoDB","REST API"],
-    category: "software",
-    link: "https://mykerchief.live/"
+    name: "Car Price Prediction Model",
+    description: "A Machine Learning model built using Python and Scikit-Learn to predict car prices.",
+    image: carprice,
+    tools: ["Python", "Pandas", "Scikit-Learn"],
+    category: "ml",
+    link: "https://mavenshowcase.com/project/16842"
   },
   {
     id: 2,
-    name: "Parkinson's Mobile App",
-    description: "A Parkinson's disease progress tracking system using MOCA test",
-    image: parkinsons, 
-    tools: [ "Expo Go", "Fast API", "PostgreSQL"],
-    category: "software",
-    link: "https://github.com/omkar-79/parkinson-app"
+    name: "AtliQ Grands Hospitality Dashboard",
+    description: "A BI dashboard using Tableau & Excel to analyze hotel booking performance.",
+    image: hotel,
+    tools: ["Tableau", "Excel"],
+    category: "bi",
+    link: "https://mavenshowcase.com/project/16143"
   },
   {
     id: 3,
-    name: "FoodStack",
-    description: "A web application for predicting sales in a restaurant",
-    image: foodstack, 
-    tools: ["SGDRegressor", "Databricks", "MongoDB"],
-    category: "ml",
-    link: "https://github.com/omkar-79/foodstack-ml"
+    name: "Credit Card Usage Analysis Dashboard",
+    description: "A Power BI dashboard analyzing credit card usage trends.",
+    image: creditcard,
+    tools: ["Power BI", "Excel"],
+    category: "bi",
+    link: "https://mavenshowcase.com/project/16324"
   },
   {
     id: 4,
-    name: "News Summarization App",
-    description: "A web application to summarize news articles using NLP. Used Google's T5 model and CNN/DailyMail dataset",
-    image: news_app, 
-    tools: ["Python", "HuggingFace", "HTML"],
-    category: "ml",
-    link: "https://github.com/omkar-79/news-summarization"
+    name: "Olympics Data Case Study",
+    description: "An SQL-based analytics project on Olympics data.",
+    image: olympics,
+    tools: ["SQL", "MySQL"],
+    category: "analytics",
+    link: "https://mavenshowcase.com/project/16272"
   },
   {
     id: 5,
-    name: "DroneIt",
-    description: "A secure, discussion platform for Drone enthusiast to post drone challenges and innovators provide solutions",
-    image: droneit, 
-    tools: ["React", "Prisma ORM", "Redux","GraphQL"],
-    category: "software",
-    link: "https://github.com/omkar-79/DroneWERX"
+    name: "AtliQ Hardware – Sales & Customer Performance Report",
+    description: "Excel & DAX-based analytics report on customer and sales performance.",
+    image: customerperf,
+    tools: ["Excel", "DAX", "VBA"],
+    category: "analytics",
+    link: "https://mavenshowcase.com/project/16715"
   },
   {
     id: 6,
-    name: "Email Buddy AI",
-    description: "LLM-powered personalized marketing email generator using Claude Sonnet 4",
-    image: emailbuddy, 
-    tools: ["Python", "FastAPI", "MCP", "Claude API"],
-    category: "ml",
-    link: "https://github.com/omkar-79/claude4-mcp-emailer"
+    name: "AtliQ Hardware – Finance Analysis & Reporting",
+    description: "Finance analytics using Excel and DAX to evaluate company performance.",
+    image: financial,
+    tools: ["Excel", "DAX", "VBA"],
+    category: "analytics",
+    link: "https://mavenshowcase.com/project/17046"
   },
-  {
-    id: 7,
-    name: "MedCompass",
-    description: "An automated post-discharge call system for hospitals to schedule follow-up calls",
-    image: medcompass, 
-    tools: ["Node.js", "REST API", "MongoDB"],
-    category: "software",
-    link: "https://github.com/omkar-79/medcompass"
-  },
-  // Add more projects here
 ];
 
 export default function Projects() {
-  const [filter, setFilter] = useState<'all' | 'software' | 'ml'>('all');
+  const [filter, setFilter] = useState<'all' | 'ml' | 'bi' | 'analytics'>('all');
 
-  const filteredProjects = projects.filter(project => 
+  const filteredProjects = projects.filter(project =>
     filter === 'all' ? true : project.category === filter
   );
 
@@ -107,37 +97,20 @@ export default function Projects() {
       </motion.h2>
 
       {/* Filter Buttons */}
-      <div className="flex justify-center gap-4 mb-8">
-        <button
-          onClick={() => setFilter('all')}
-          className={`px-6 py-2 rounded-full transition-colors ${
-            filter === 'all' 
-              ? 'bg-[#49c5b6] text-white' 
-              : 'bg-[#2A2F32] text-gray-300 hover:bg-[#383F42]'
-          }`}
-        >
-          All
-        </button>
-        <button
-          onClick={() => setFilter('software')}
-          className={`px-6 py-2 rounded-full transition-colors ${
-            filter === 'software' 
-              ? 'bg-[#49c5b6] text-white' 
-              : 'bg-[#2A2F32] text-gray-300 hover:bg-[#383F42]'
-          }`}
-        >
-          Software Development
-        </button>
-        <button
-          onClick={() => setFilter('ml')}
-          className={`px-6 py-2 rounded-full transition-colors ${
-            filter === 'ml' 
-              ? 'bg-[#49c5b6] text-white' 
-              : 'bg-[#2A2F32] text-gray-300 hover:bg-[#383F42]'
-          }`}
-        >
-          Machine Learning
-        </button>
+      <div className="flex justify-center gap-4 mb-8 flex-wrap">
+        {["all", "ml", "bi", "analytics"].map((type) => (
+          <button
+            key={type}
+            onClick={() => setFilter(type as any)}
+            className={`px-6 py-2 rounded-full transition-colors ${
+              filter === type 
+                ? 'bg-[#49c5b6] text-white' 
+                : 'bg-[#2A2F32] text-gray-300 hover:bg-[#383F42]'
+            }`}
+          >
+            {type === "all" ? "All" : type.toUpperCase()}
+          </button>
+        ))}
       </div>
 
       {/* Projects Grid */}
@@ -154,7 +127,7 @@ export default function Projects() {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}
               transition={{ duration: 0.3 }}
-              className="bg-[#2A2F32] rounded-lg overflow-hidden"
+              className="bg-[#2A2F32] rounded-lg overflow-hidden cursor-pointer"
               onClick={() => window.open(project.link, '_blank')}
             >
               <div className="relative h-48">

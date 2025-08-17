@@ -12,27 +12,38 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
-    title: "Research Assistant",
-    company: "George Washington University",
-    duration: "August 2024 - Present",
+    title: "Statistical Analyst – Internship",
+    company: "Indian Sugar & Bio-energy Association (ISMA), New Delhi (On-Site)",
+    duration: "Jul 2024 - Jan 2025",
     description: [
-      "Assess patent potential and commercial viability of emerging technologies developed at the university",
-      "Built a Python-based Chrome extension to automate sending personalized marketing emails"
+      "Delivered pan-India sugar and ethanol data analysis, driving strategic decisions for manager & director-level stakeholders.",
+      "Co-developed the Statistics Handbook 2023-24, ensuring error-free data delivery and adherence to industry standards.",
+      "Established robust data validation protocols, reducing reporting errors by 25% and enhancing confidence in outputs.",
+      "Coordinated with cross-functional teams to compile accurate domestic and global market reports."
     ],
-    skills: ["Python", "Technical Writing", "Computer Architecture", "Deep Learning"]
+    skills: ["Advanced Excel", "Data Analysis & Visualization", "Python (Automation)"]
   },
   {
-    title: "Software Engineer Intern",
-    company: "Chistats Labs",
-    duration: "September 2022 - November 2022",
+    title: "Machine Learning Engineer – Internship",
+    company: "CodSoft, New Delhi (Remote)",
+    duration: "Oct 2023 - Nov 2023",
     description: [
-      "Built an alert system, reducing system downtime by 40% through proactive monitoring",
-      "Built a data pipeline to ingest real-time weather data using Telegraf, and visualize trends in Grafana"
+      "Completed hands-on projects to gain real-world machine learning experience.",
+      "Applied data preprocessing, visualization, and modeling techniques to small-scale datasets."
     ],
-    skills: ["Python", "InfluxDB", "Grafana", "FastAPI", "Git"]
+    skills: ["Numpy", "Pandas", "Matplotlib", "Seaborn", "Scikit-learn"]
   },
-  
-  // Add more experiences...
+  {
+    title: "Teacher of Mathematics",
+    company: "Vijay Institute and Learning, New Delhi (Part-time)",
+    duration: "May 2022 - Apr 2023",
+    description: [
+      "Taught mathematics with a focus on conceptual understanding and problem-solving.",
+      "Developed and presented mathematical analysis solutions to students.",
+      "Maintained high engagement levels in class, fostering a love for mathematics."
+    ],
+    skills: ["Mathematical Analysis", "Teaching", "Presenting Solutions"]
+  }
 ];
 
 export default function Experience() {
