@@ -30,7 +30,7 @@ const projects: Project[] = [
     image: carprice,
     tools: ["Python", "Pandas", "Scikit-Learn"],
     category: "ml",
-    link: "https://mavenshowcase.com/project/16842"
+    link: "https://github.com/MasterMindRomii/Car-Price-Prediction-Model"
   },
   {
     id: 2,
@@ -39,7 +39,7 @@ const projects: Project[] = [
     image: hotel,
     tools: ["Tableau", "Excel"],
     category: "bi",
-    link: "https://mavenshowcase.com/project/16143"
+    link: "https://mavenshowcase.com/project/16725"
   },
   {
     id: 3,
@@ -48,7 +48,7 @@ const projects: Project[] = [
     image: creditcard,
     tools: ["Power BI", "Excel"],
     category: "bi",
-    link: "https://mavenshowcase.com/project/16324"
+    link: "https://mavenshowcase.com/project/15249"
   },
   {
     id: 4,
@@ -57,7 +57,7 @@ const projects: Project[] = [
     image: olympics,
     tools: ["SQL", "MySQL"],
     category: "analytics",
-    link: "https://mavenshowcase.com/project/16272"
+    link: "https://mavenshowcase.com/project/15251"
   },
   {
     id: 5,
@@ -75,7 +75,7 @@ const projects: Project[] = [
     image: financial,
     tools: ["Excel", "DAX", "VBA"],
     category: "analytics",
-    link: "https://mavenshowcase.com/project/17046"
+    link: "https://mavenshowcase.com/project/16717"
   },
 ];
 
