@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
+
 // Declare VANTA types for TypeScript
 declare global {
   interface Window {
@@ -7,12 +8,18 @@ declare global {
     THREE: any;
   }
 }
+
 export default function Hero() {
   const [vantaEffect, setVantaEffect] = useState<any>(null);
   const vantaRef = useRef<HTMLDivElement>(null);
+  const isInitialized = useRef(false);
+
   useEffect(() => {
+    // Prevent multiple initializations
+    if (isInitialized.current) return;
+    
     // Load Three.js first (required for VANTA)
-    const loadThreeJS = () => {
+    const loadThreeJS = (): Promise<boolean> => {
       return new Promise((resolve) => {
         if (window.THREE) {
           resolve(true);
@@ -21,12 +28,16 @@ export default function Hero() {
         const script = document.createElement('script');
         script.src = 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js';
         script.onload = () => resolve(true);
-        script.onerror = () => resolve(false);
+        script.onerror = () => {
+          console.error('Failed to load Three.js');
+          resolve(false);
+        };
         document.head.appendChild(script);
       });
     };
+
     // Load VANTA.js NET effect
-    const loadVantaNet = () => {
+    const loadVantaNet = (): Promise<boolean> => {
       return new Promise((resolve) => {
         if (window.VANTA?.NET) {
           resolve(true);
@@ -35,18 +46,34 @@ export default function Hero() {
         const script = document.createElement('script');
         script.src = 'https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js';
         script.onload = () => resolve(true);
-        script.onerror = () => resolve(false);
+        script.onerror = () => {
+          console.error('Failed to load VANTA.NET');
+          resolve(false);
+        };
         document.head.appendChild(script);
       });
     };
+
     // Initialize VANTA effect
     const initVanta = async () => {
       try {
+        isInitialized.current = true;
+        
         // Load dependencies
-        await loadThreeJS();
-        await loadVantaNet();
+        const threeLoaded = await loadThreeJS();
+        if (!threeLoaded) {
+          console.error('Three.js failed to load');
+          return;
+        }
+
+        const vantaLoaded = await loadVantaNet();
+        if (!vantaLoaded) {
+          console.error('VANTA.NET failed to load');
+          return;
+        }
+
         // Initialize VANTA effect
-        if (vantaRef.current && window.VANTA?.NET && !vantaEffect) {
+        if (vantaRef.current && window.VANTA?.NET) {
           const effect = window.VANTA.NET({
             el: vantaRef.current,
             mouseControls: true,
@@ -66,10 +93,13 @@ export default function Hero() {
           setVantaEffect(effect);
         }
       } catch (error) {
-        console.error('Failed to load VANTA:', error);
+        console.error('Failed to initialize VANTA:', error);
+        isInitialized.current = false;
       }
     };
+
     initVanta();
+
     // Cleanup function
     return () => {
       if (vantaEffect) {
@@ -78,10 +108,24 @@ export default function Hero() {
         } catch (error) {
           console.error('Error destroying VANTA effect:', error);
         }
-        setVantaEffect(null);
+      }
+      isInitialized.current = false;
+    };
+  }, []); // Empty dependency array - effect runs once on mount
+
+  // Separate cleanup effect for vantaEffect changes
+  useEffect(() => {
+    return () => {
+      if (vantaEffect) {
+        try {
+          vantaEffect.destroy();
+        } catch (error) {
+          console.error('Error destroying VANTA effect:', error);
+        }
       }
     };
-  }, []); // Remove vantaEffect from dependency array to prevent re-initialization
+  }, [vantaEffect]);
+
   return (
     <div ref={vantaRef} className="w-full h-screen relative">
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center font-poppins">
