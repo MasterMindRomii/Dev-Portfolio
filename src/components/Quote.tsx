@@ -17,7 +17,7 @@ export default function Quote() {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Aspiring data engineer dedicated to building scalable solutions that impact everyday life
+          I&apos;m Romi Gupta, a recent graduate from Maharaja Surajmal Institute
         </motion.span>
         <motion.span
           className="block"
@@ -25,7 +25,7 @@ export default function Quote() {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          Looking to contribute and work in analytics and machine learning field.
+          with a Bachelor&apos;s in Computer Applications and currently pursuing MCA in AI from IGNOU.
         </motion.span>
         <motion.span
           className="block"
@@ -33,7 +33,7 @@ export default function Quote() {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          
+          Specializing in Data Science & Analytics, seeking impactful opportunities in the field.
         </motion.span>
       </motion.p>
     </div>
