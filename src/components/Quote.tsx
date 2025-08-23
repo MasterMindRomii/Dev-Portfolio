@@ -23,7 +23,7 @@ export default function Quote() {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.5 }}
         >
-          Hi, I&apos;m Romi Gupta ✨
+          Hi, I&apos;m Romi Gupta!
         </motion.span>
         <motion.span
           className="block mb-3"
