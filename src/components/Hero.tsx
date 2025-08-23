@@ -41,6 +41,12 @@ export default function Hero() {
         <p className="text-l md:text-xl text-gray-300">
           Data Analytics and Engineering 
         </p>
+         <p className="text-l md:text-xl text-gray-300">
+          SELECT role, domain FROM opportunities 
+          WHERE candidate = 'Me'
+  AND domain IN ('Data Analytics', 'Data Engineering')
+  AND status = 'Actively Looking';
+        </p>
       </div>
     </div>
   );
