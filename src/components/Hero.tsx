@@ -1,13 +1,7 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
 
-// Declare VANTA types for TypeScript
-declare global {
-  interface Window {
-    VANTA: any;
-    THREE: any;
-  }
-}
+// Use direct window access instead of global declarations to avoid conflicts
 
 export default function Hero() {
   const [vantaEffect, setVantaEffect] = useState<any>(null);
@@ -21,7 +15,7 @@ export default function Hero() {
     // Load Three.js first (required for VANTA)
     const loadThreeJS = (): Promise<boolean> => {
       return new Promise((resolve) => {
-        if (window.THREE) {
+        if ((window as any).THREE) {
           resolve(true);
           return;
         }
@@ -39,7 +33,7 @@ export default function Hero() {
     // Load VANTA.js NET effect
     const loadVantaNet = (): Promise<boolean> => {
       return new Promise((resolve) => {
-        if (window.VANTA?.NET) {
+        if ((window as any).VANTA?.NET) {
           resolve(true);
           return;
         }
@@ -73,8 +67,8 @@ export default function Hero() {
         }
 
         // Initialize VANTA effect
-        if (vantaRef.current && window.VANTA?.NET) {
-          const effect = window.VANTA.NET({
+        if (vantaRef.current && (window as any).VANTA?.NET) {
+          const effect = (window as any).VANTA.NET({
             el: vantaRef.current,
             mouseControls: true,
             touchControls: true,
