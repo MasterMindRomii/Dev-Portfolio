@@ -34,6 +34,15 @@ const projects: Project[] = [
   },
   {
     id: 2,
+    name: "PAN Number Validation Project using MySQL",
+    description: "This project includes SQL scripts to clean, validate, and categorize PAN numbers as Valid or Invalid based on multiple business rules and regex patterns.",
+    image: pan_valid,
+    tools: ["SQL", "MySQL", "Regex", "View", "Function"],
+    category: "analytics",
+    link: "https://mavenshowcase.com/project/43854"
+  },
+  {
+    id: 3,
     name: "AtliQ Grands Hospitality Dashboard",
     description: "A BI dashboard using Tableau & Excel to analyze hotel booking performance.",
     image: hotel,
@@ -42,7 +51,7 @@ const projects: Project[] = [
     link: "https://mavenshowcase.com/project/16725"
   },
   {
-    id: 3,
+    id: 4,
     name: "Credit Card Usage Analysis Dashboard",
     description: "A Power BI dashboard analyzing credit card usage trends.",
     image: creditcard,
@@ -51,22 +60,13 @@ const projects: Project[] = [
     link: "https://mavenshowcase.com/project/15249"
   },
   {
-    id: 4,
+    id: 5,
     name: "Olympics Data Case Study",
     description: "An SQL-based analytics project on Olympics data.",
     image: olympics,
     tools: ["SQL", "MySQL"],
     category: "analytics",
     link: "https://mavenshowcase.com/project/15251"
-  },
-  {
-    id: 5,
-    name: "AtliQ Hardware – Sales & Customer Performance Report",
-    description: "Excel & DAX-based analytics report on customer and sales performance.",
-    image: customerperf,
-    tools: ["Excel", "DAX", "VBA"],
-    category: "analytics",
-    link: "https://mavenshowcase.com/project/16715"
   },
   {
     id: 6,
