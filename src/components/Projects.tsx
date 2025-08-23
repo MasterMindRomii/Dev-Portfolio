@@ -9,7 +9,7 @@ import carprice from '@/assets/carprice.jpg';
 import hotel from '@/assets/hotel.jpg';
 import creditcard from '@/assets/creditcard.jpg';
 import olympics from '@/assets/olympics.jpg';
-import customerperf from '@/assets/customerperf.jpg';
+import pan_valid from '@/assets/pan_valid.jpg';
 import financial from '@/assets/financial.jpg';
 
 interface Project {
