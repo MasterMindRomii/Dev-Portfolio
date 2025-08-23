@@ -86,7 +86,7 @@ export default function Footer() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <p>© {new Date().getFullYear()} CodexAI. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Romi Gupta. All rights reserved.</p>
         </motion.div>
       </div>
     </footer>
