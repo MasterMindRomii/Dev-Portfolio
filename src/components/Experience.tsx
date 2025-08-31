@@ -16,11 +16,11 @@ const experiences: Experience[] = [
     company: "Indian Sugar & Bio-energy Association (ISMA), New Delhi (On-Site)",
     duration: "Jul 2024 - Jan 2025",
     description: [
-      "Delivered pan-India sugar and ethanol data analysis, driving strategic decisions for manager & director-level stakeholders.",
-      "Co-developed the Statistics Handbook 2023-24, ensuring error-free data delivery and adherence to industry standards.",
-      "Established robust data validation protocols, reducing reporting errors by 25% and enhancing confidence in outputs.",
-      "Coordinated with cross-functional teams to compile accurate domestic and global market reports."
-    ],
+  "Delivered pan-India sugar and ethanol data analysis for 150+ mills, driving strategic decisions for manager & director-level stakeholders across the bio-energy sector.",
+  "Co-developed the Statistics Handbook 2023-24 covering 150+ pages of industry data, ensuring error-free delivery to 500+ industry stakeholders.",
+  "Established robust data validation protocols, reducing reporting errors by 25% and enhancing stakeholder confidence in weekly data outputs.",
+  "Automated 5+ reporting processes using Advanced Excel and Python, reducing manual work by 40% and streamlining weekly workflows."
+],
     skills: ["Advanced Excel", "Data Analysis & Visualization", "Python (Automation)"]
   },
   {
