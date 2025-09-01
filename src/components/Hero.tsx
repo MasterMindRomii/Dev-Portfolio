@@ -56,7 +56,7 @@ export default function Hero() {
 
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 mb-8 animate-fade-in-up animation-delay-300">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+          <a href="https://github.com/MasterMindRomii" target="_blank" rel="noopener noreferrer"
              className="group bg-[#49c5b6]/10 hover:bg-[#49c5b6]/20 border border-[#49c5b6]/30 hover:border-[#49c5b6]/50 rounded-lg px-6 py-3 backdrop-blur-sm transition-all duration-300 hover:transform hover:scale-105">
             <div className="flex items-center justify-center gap-2">
               <svg className="w-5 h-5 text-[#49c5b6] group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
