@@ -20,7 +20,8 @@ const skills: Skill[] = [
       "Joins",
       "Window Functions",
       "CTEs",
-      "Aggregate Functions"
+      "Aggregate Functions",
+      "Normalization"
     ]
   },
   {
@@ -47,11 +48,10 @@ const skills: Skill[] = [
     category: "Data Engineering Basic",
     items: [
       "Snowflake",
-      "BigQuery",
       "Airflow",
-      "Jira",
+      "PySpark",
       "ETL Pipeline Processes",
-      "Google Cloud Platform"
+      "Azure Cloud Platform"
     ]
   }
 ];
