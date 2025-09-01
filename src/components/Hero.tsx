@@ -13,6 +13,71 @@ export default function Hero() {
         <div className="absolute w-1 h-1 bg-[#49c5b6] rounded-full animate-float-3" style={{top: '70%', left: '40%'}}></div>
       </div>
 
+      {/* Technology Skills Floating Around */}
+      <div className="absolute inset-0 pointer-events-none">
+        {/* Python */}
+        <div className="absolute animate-float-1" style={{top: '15%', left: '15%'}}>
+          <div className="bg-[#49c5b6]/10 border border-[#49c5b6]/30 rounded-lg px-3 py-2 backdrop-blur-sm">
+            <span className="text-[#49c5b6] font-semibold text-sm">Python</span>
+          </div>
+        </div>
+        
+        {/* SQL */}
+        <div className="absolute animate-float-2" style={{top: '25%', right: '20%'}}>
+          <div className="bg-[#49c5b6]/10 border border-[#49c5b6]/30 rounded-lg px-3 py-2 backdrop-blur-sm">
+            <span className="text-[#49c5b6] font-semibold text-sm">SQL</span>
+          </div>
+        </div>
+        
+        {/* Excel */}
+        <div className="absolute animate-float-3" style={{top: '40%', left: '8%'}}>
+          <div className="bg-[#49c5b6]/10 border border-[#49c5b6]/30 rounded-lg px-3 py-2 backdrop-blur-sm">
+            <span className="text-[#49c5b6] font-semibold text-sm">Excel</span>
+          </div>
+        </div>
+        
+        {/* Snowflake */}
+        <div className="absolute animate-float-1" style={{top: '55%', right: '15%'}}>
+          <div className="bg-[#49c5b6]/10 border border-[#49c5b6]/30 rounded-lg px-3 py-2 backdrop-blur-sm">
+            <span className="text-[#49c5b6] font-semibold text-sm">Snowflake</span>
+          </div>
+        </div>
+        
+        {/* Airflow */}
+        <div className="absolute animate-float-2" style={{top: '70%', left: '12%'}}>
+          <div className="bg-[#49c5b6]/10 border border-[#49c5b6]/30 rounded-lg px-3 py-2 backdrop-blur-sm">
+            <span className="text-[#49c5b6] font-semibold text-sm">Airflow</span>
+          </div>
+        </div>
+        
+        {/* Azure */}
+        <div className="absolute animate-float-3" style={{top: '80%', right: '25%'}}>
+          <div className="bg-[#49c5b6]/10 border border-[#49c5b6]/30 rounded-lg px-3 py-2 backdrop-blur-sm">
+            <span className="text-[#49c5b6] font-semibold text-sm">Azure</span>
+          </div>
+        </div>
+        
+        {/* DBT */}
+        <div className="absolute animate-float-1" style={{top: '35%', right: '8%'}}>
+          <div className="bg-[#49c5b6]/10 border border-[#49c5b6]/30 rounded-lg px-3 py-2 backdrop-blur-sm">
+            <span className="text-[#49c5b6] font-semibold text-sm">dbt</span>
+          </div>
+        </div>
+        
+        {/* Additional smaller badges for balance */}
+        <div className="absolute animate-float-2" style={{top: '60%', left: '85%'}}>
+          <div className="bg-[#49c5b6]/10 border border-[#49c5b6]/30 rounded-full px-2 py-1 backdrop-blur-sm">
+            <span className="text-[#49c5b6] font-semibold text-xs">ML</span>
+          </div>
+        </div>
+        
+        <div className="absolute animate-float-3" style={{top: '45%', left: '90%'}}>
+          <div className="bg-[#49c5b6]/10 border border-[#49c5b6]/30 rounded-full px-2 py-1 backdrop-blur-sm">
+            <span className="text-[#49c5b6] font-semibold text-xs">BI</span>
+          </div>
+        </div>
+      </div>
+
       {/* Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center font-poppins z-10">
         <h1 className="text-4xl md:text-8xl mb-4 text-white animate-fade-in-up" 
