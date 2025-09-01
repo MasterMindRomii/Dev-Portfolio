@@ -23,18 +23,7 @@ export default function Hero() {
         <p className="text-lg md:text-xl text-gray-300 mb-6 animate-fade-in-up animation-delay-200">
           Data Analytics and Engineering 
         </p>
-        
-        {/* <div className="text-sm md:text-lg text-gray-300 font-mono bg-black/30 p-6 rounded-lg backdrop-blur-sm max-w-2xl border border-[#49c5b6]/20 animate-fade-in-up animation-delay-400">
-          <code className="block text-left">
-            <span className="text-[#49c5b6]">SELECT DISTINCT</span> domain,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-[#49c5b6]">RANK()</span> <span className="text-[#49c5b6]">OVER</span> (<span className="text-[#49c5b6]">ORDER BY</span> domain) <span className="text-[#49c5b6]">AS</span> Priority_Rank,<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-green-400">&apos;Actively Looking&apos;</span> <span className="text-[#49c5b6]">AS</span> Status<br/>
-            <span className="text-[#49c5b6]">FROM</span> opportunities<br/>
-            <span className="text-[#49c5b6]">WHERE</span> candidate = <span className="text-green-400">&apos;Me&apos;</span><br/>
-            &nbsp;&nbsp;<span className="text-[#49c5b6]">AND</span> domain <span className="text-[#49c5b6]">IN</span> (<span className="text-green-400">&apos;Data Analytics&apos;</span>, <span className="text-green-400">&apos;Data Engineering&apos;</span>);
-          </code>
-        </div>
-      </div> */}
+      </div>
 
       <style jsx>{`
         @keyframes float-1 {
