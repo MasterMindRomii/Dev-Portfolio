@@ -31,7 +31,7 @@ export default function Quote() {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.7 }}
         >
-          Recent graduate from <span className="text-[#49c5b6] font-semibold">Maharaja Surajmal Institute</span> with a Bachelor&apos;s in Computer Applications, currently pursuing <span className="text-[#49c5b6] font-semibold">MCA in AI from IGNOU</span>.
+          Recent graduate from <span className="text-[#49c5b6] font-semibold">Maharaja Surajmal Institute</span> with a Bachelor&apos;s in Computer Applications, currently pursuing <span className="text-[#49c5b6] font-semibold">MCA in Data Science & Analytics from IGNOU</span>.
         </motion.span>
         <motion.span
           className="block text-gray-200"
