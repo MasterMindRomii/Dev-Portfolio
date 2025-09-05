@@ -157,7 +157,16 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Mobile & Tablet: Skills as subtle badges below buttons - REMOVED FROM HERE */}
+        {/* Mobile & Tablet: Skills as subtle badges below buttons */}
+        <div className={`flex flex-wrap justify-center gap-2 md:gap-3 lg:hidden max-w-sm md:max-w-lg animate-fade-in-up animation-delay-400 ${showProfiles ? 'mt-4' : ''}`}>
+          {[].map((skill, index) => (
+            <div key={skill} 
+                 className="bg-[#49c5b6]/5 border border-[#49c5b6]/20 rounded-full px-3 py-1 backdrop-blur-sm"
+                 style={{animationDelay: `${0.1 * index}s`}}>
+              <span className="text-[#49c5b6]/60 font-medium text-xs md:text-sm">{skill}</span>
+            </div>
+          ))}
+        </div>
       </div>
 
       <style jsx>{`
