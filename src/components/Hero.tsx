@@ -158,7 +158,7 @@ export default function Hero() {
         </div>
 
         {/* Mobile & Tablet: Skills as subtle badges below buttons */}
-        <div className={`flex flex-wrap justify-center gap-2 md:gap-3 lg:hidden max-w-sm md:max-w-lg animate-fade-in-up animation-delay-400 ${showProfiles ? 'mt-4' : ''}`}>
+        <div className={`flex flex-wrap justify-center gap-2 md:gap-3 lg:hidden max-w-sm md:max-w-lg animate-fade-in-up animation-delay-400 ${showProfiles ? 'mt-8' : 'mt-0'}`}>
           {['Python', 'SQL', 'Advanced Excel', 'Snowflake', 'Airflow', 'Azure', 'Power BI'].map((skill, index) => (
             <div key={skill} 
                  className="bg-[#49c5b6]/5 border border-[#49c5b6]/20 rounded-full px-3 py-1 backdrop-blur-sm"
