@@ -11,6 +11,7 @@ import creditcard from '@/assets/creditcard.jpg';
 import olympics from '@/assets/olympics.jpg';
 import pan_valid from '@/assets/pan_valid.jpg';
 import financial from '@/assets/financial.jpg';
+import mart from '@/assets/mart.jpg';
 
 interface Project {
   id: number;
