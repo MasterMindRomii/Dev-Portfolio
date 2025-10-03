@@ -12,6 +12,7 @@ import olympics from '@/assets/olympics.jpg';
 import pan_valid from '@/assets/pan_valid.jpg';
 import financial from '@/assets/financial.jpg';
 import mart from '@/assets/mart.jpg';
+import pizza from '@/assets/pizza.png';
 
 interface Project {
   id: number;
@@ -35,6 +36,15 @@ const projects: Project[] = [
   },
   {
     id: 2,
+    name: "Pizza Runner - SQL Case Study",
+    description: "Pizza Runner is a data-driven case study that combines pizza delivery with 'Uberization' concepts.",
+    image: pizza,
+    tools: ["Mysql"],
+    category: "analytics",
+    link: "https://mavenshowcase.com/project/49299"
+  },
+  {
+    id: 3,
     name: "Car Price Prediction Model",
     description: "A Machine Learning model built using Python and Scikit-Learn to predict car prices.",
     image: carprice,
@@ -43,7 +53,7 @@ const projects: Project[] = [
     link: "https://github.com/MasterMindRomii/Car-Price-Prediction-Model"
   },
   {
-    id: 3,
+    id: 4,
     name: "PAN Number Validation Project using MySQL",
     description: "This project includes SQL scripts to clean, validate, and categorize PAN numbers as Valid or Invalid based on multiple business rules and regex patterns.",
     image: pan_valid,
@@ -52,7 +62,7 @@ const projects: Project[] = [
     link: "https://mavenshowcase.com/project/43854"
   },
   {
-    id: 4,
+    id: 5,
     name: "AtliQ Grands Hospitality Dashboard",
     description: "A BI dashboard using Tableau & Excel to analyze hotel booking performance.",
     image: hotel,
@@ -61,7 +71,7 @@ const projects: Project[] = [
     link: "https://mavenshowcase.com/project/16725"
   },
   {
-    id: 5,
+    id: 6,
     name: "Credit Card Usage Analysis Dashboard",
     description: "A Power BI dashboard analyzing credit card usage trends.",
     image: creditcard,
@@ -70,7 +80,7 @@ const projects: Project[] = [
     link: "https://mavenshowcase.com/project/15249"
   },
   {
-    id: 6,
+    id: 7,
     name: "Olympics Data Case Study",
     description: "An SQL-based analytics project on Olympics data.",
     image: olympics,
@@ -79,7 +89,7 @@ const projects: Project[] = [
     link: "https://mavenshowcase.com/project/15251"
   },
   {
-    id: 7,
+    id: 8,
     name: "AtliQ Hardware – Finance Analysis & Reporting",
     description: "Finance analytics using Excel and DAX to evaluate company performance.",
     image: financial,
