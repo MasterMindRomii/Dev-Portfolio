@@ -84,7 +84,7 @@ const projects: Project[] = [
     description: "Analyze Promotions and Provide Tangible Insights to Sales Director for Diwali 2025 & Makar Sakranti 2025",
     image: mart,
     tools: ["Excel", "Power BI", "Mysql"],
-    category: "analytics",
+    category: "bi",
     link: "https://mavenshowcase.com/project/49299"
   },
 ];
