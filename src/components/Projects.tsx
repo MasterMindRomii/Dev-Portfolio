@@ -77,6 +77,15 @@ const projects: Project[] = [
     category: "analytics",
     link: "https://mavenshowcase.com/project/16717"
   },
+  {
+    id: 7,
+    name: "Atliq Mart Promotion Analysis & Insights",
+    description: "Analyze Promotions and Provide Tangible Insights to Sales Director for Diwali 2025 & Makar Sakranti 2025",
+    image: mart,
+    tools: ["Excel", "Power BI", "Mysql"],
+    category: "analytics",
+    link: "https://mavenshowcase.com/project/49299"
+  },
 ];
 
 export default function Projects() {
