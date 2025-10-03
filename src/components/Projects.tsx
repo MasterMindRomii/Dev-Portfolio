@@ -25,7 +25,7 @@ interface Project {
 
 const projects: Project[] = [
   {
-    id: 1,
+    id: 2,
     name: "Car Price Prediction Model",
     description: "A Machine Learning model built using Python and Scikit-Learn to predict car prices.",
     image: carprice,
@@ -34,7 +34,7 @@ const projects: Project[] = [
     link: "https://github.com/MasterMindRomii/Car-Price-Prediction-Model"
   },
   {
-    id: 2,
+    id: 3,
     name: "PAN Number Validation Project using MySQL",
     description: "This project includes SQL scripts to clean, validate, and categorize PAN numbers as Valid or Invalid based on multiple business rules and regex patterns.",
     image: pan_valid,
@@ -43,7 +43,7 @@ const projects: Project[] = [
     link: "https://mavenshowcase.com/project/43854"
   },
   {
-    id: 3,
+    id: 4,
     name: "AtliQ Grands Hospitality Dashboard",
     description: "A BI dashboard using Tableau & Excel to analyze hotel booking performance.",
     image: hotel,
@@ -52,7 +52,7 @@ const projects: Project[] = [
     link: "https://mavenshowcase.com/project/16725"
   },
   {
-    id: 4,
+    id: 5,
     name: "Credit Card Usage Analysis Dashboard",
     description: "A Power BI dashboard analyzing credit card usage trends.",
     image: creditcard,
@@ -61,7 +61,7 @@ const projects: Project[] = [
     link: "https://mavenshowcase.com/project/15249"
   },
   {
-    id: 5,
+    id: 6,
     name: "Olympics Data Case Study",
     description: "An SQL-based analytics project on Olympics data.",
     image: olympics,
@@ -70,7 +70,7 @@ const projects: Project[] = [
     link: "https://mavenshowcase.com/project/15251"
   },
   {
-    id: 6,
+    id: 7,
     name: "AtliQ Hardware – Finance Analysis & Reporting",
     description: "Finance analytics using Excel and DAX to evaluate company performance.",
     image: financial,
@@ -79,7 +79,7 @@ const projects: Project[] = [
     link: "https://mavenshowcase.com/project/16717"
   },
   {
-    id: 7,
+    id: 1,
     name: "Atliq Mart Promotion Analysis & Insights",
     description: "Analyze Promotions and Provide Tangible Insights to Sales Director for Diwali 2025 & Makar Sakranti 2025",
     image: mart,
