@@ -25,6 +25,15 @@ interface Project {
 
 const projects: Project[] = [
   {
+    id: 1,
+    name: "Atliq Mart Promotion Analysis & Insights",
+    description: "Analyze Promotions and Provide Tangible Insights to Sales Director for Diwali 2025 & Makar Sakranti 2025",
+    image: mart,
+    tools: ["Excel", "Power BI", "Mysql"],
+    category: "bi",
+    link: "https://mavenshowcase.com/project/49299"
+  },
+  {
     id: 2,
     name: "Car Price Prediction Model",
     description: "A Machine Learning model built using Python and Scikit-Learn to predict car prices.",
@@ -78,15 +87,7 @@ const projects: Project[] = [
     category: "analytics",
     link: "https://mavenshowcase.com/project/16717"
   },
-  {
-    id: 1,
-    name: "Atliq Mart Promotion Analysis & Insights",
-    description: "Analyze Promotions and Provide Tangible Insights to Sales Director for Diwali 2025 & Makar Sakranti 2025",
-    image: mart,
-    tools: ["Excel", "Power BI", "Mysql"],
-    category: "bi",
-    link: "https://mavenshowcase.com/project/49299"
-  },
+  
 ];
 
 export default function Projects() {
