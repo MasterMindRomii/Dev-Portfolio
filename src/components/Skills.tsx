@@ -53,6 +53,16 @@ const skills: Skill[] = [
       "ETL Pipeline Processes",
       "Azure Cloud Platform"
     ]
+  },
+  {
+    category: "Soft Skills",
+    items: [
+      "Stakeholder Management",
+      "Data Driven Solutions",
+      "Problem Solving",
+      "Communication & Presentation",
+      "Critical Thinking"
+    ]
   }
 ];
 
