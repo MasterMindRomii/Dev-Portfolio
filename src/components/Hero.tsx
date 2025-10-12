@@ -128,17 +128,17 @@ export default function Hero() {
               </div>
             </a>
 
-            {/* StrataScratch */}
-            <a href="https://platform.stratascratch.com/user/MasterMindRomi" target="_blank" rel="noopener noreferrer"
+            {/* Maven Analytics */}
+            <a href="https://mavenshowcase.com/profile/b821d360-b081-70b2-e213-93c4be11589e" target="_blank" rel="noopener noreferrer"
                className="group relative bg-[#49c5b6]/5 hover:bg-[#49c5b6]/10 border border-[#49c5b6]/20 hover:border-[#49c5b6]/40 rounded-lg p-4 backdrop-blur-sm transition-all duration-300 hover:transform hover:scale-105">
               <div className="flex flex-col items-center">
                 <svg className="w-8 h-8 text-[#49c5b6]/80 group-hover:text-[#49c5b6] transition-colors mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
                 </svg>
-                <span className="text-white font-medium text-sm mb-1">StrataScratch</span>
-                <span className="text-[#49c5b6]/60 text-xs">SQL Practice</span>
+                <span className="text-white font-medium text-sm mb-1">Maven Analytics</span>
+                <span className="text-[#49c5b6]/60 text-xs">Live Projects</span>
                 <div className="absolute -top-3 -right-1 bg-gradient-to-r from-yellow-400 to-yellow-500 text-black text-xs font-bold px-1.5 py-1 rounded-full shadow-lg z-10">
-                  TOP 10%
+                  Live Project
                 </div>
               </div>
             </a>
