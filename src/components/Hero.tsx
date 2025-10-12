@@ -70,9 +70,6 @@ export default function Hero() {
         <p className="text-lg md:text-xl text-gray-300 mb-8 animate-fade-in-up animation-delay-200">
           Data Analytics and Engineering 
         </p>
-        <p className="text-lg md:text-xl text-gray-300 mb-8 animate-fade-in-up animation-delay-200">
-          The best data skill you can develop is being able to recognise when a stakeholder &quot;wants&quot; something vs when they &quot;need&quot; something
-        </p>
 
         {/* Single elegant expandable button */}
         <div className="mb-8 animate-fade-in-up animation-delay-300 relative z-30">
