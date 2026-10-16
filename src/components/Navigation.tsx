@@ -7,8 +7,8 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
-    { name: 'About Me', href: '#about' },
     { name: 'Experience', href: '#experience' },
+    { name: 'Education', href: '#education' },
     { name: 'Projects', href: '#projects' },
     { name: 'Blogs', href: '#blogs' },
     { name: 'Need Help?', href: 'https://topmate.io/heyy_romii/', external: true },
