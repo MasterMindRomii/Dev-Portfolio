@@ -7,7 +7,6 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
-import Blog from "@/components/Blog";
 import Footer from "@/components/Footer";
 import ScrollSection from "@/components/ScrollSection";
 
@@ -39,10 +38,6 @@ export default function Home() {
       {/* Projects last */}
       <ScrollSection id="projects">
         <Projects />
-      </ScrollSection>
-      
-      <ScrollSection id="blogs">
-        <Blog />
       </ScrollSection>
       
       <ScrollSection>
