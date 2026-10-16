@@ -19,24 +19,23 @@ const experiences: Experience[] = [
     duration: "Nov 2025 - Present",
     current: true,
     description: [
-      "Monitor and optimize daily monetization performance across multiple SSPs to maximize fill rates, ArCPM, RPM, and overall programmatic yield.",
-      "Manage end-to-end demand partner relationships (Prebid, VAST, oRTB), overseeing supply-demand mapping, integration, and partner performance scaling.",
-      "Perform root cause analysis on publisher-side delivery issues, collaborating with product & engineering teams to troubleshoot ad stack implementation.",
-      "Built automation workflows that eliminate repetitive manual work in reporting and monitoring, cutting turnaround time across programmatic operations.",
-      "Drive revenue optimization through day-to-day yield analysis and monetization growth opportunities across publisher-side operations.",
-      "Recognized as WOW Performer of the Month (Feb '26)."
+      "Optimize daily monetization across demand partners (Magnite, Amazon Publisher Services, Adipolo and others) to maximize fill rate, RPM and programmatic yield, improving average yield efficiency by ~18%.",
+      "Run yield analysis in Google Ad Manager (GAM360) to track inventory performance and pricing and demand trends, and to drive floor price decisions for direct publishers.",
+      "Rolled out a dynamic price floor optimization workflow using historical yield and revenue analytics, contributing to a ~40% lift in incremental revenue. Now used company-wide.",
+      "Manage demand partner relationships (Prebid, VAST, oRTB): supply-demand mapping, integration communications, MCM invites and site approvals. Root cause analysis on publisher-side delivery issues cut resolution turnaround by ~30%.",
+      "Led DV360 campaigns end to end: trafficking, pre and post launch activities, screenshot decks and post-launch analysis reports.",
+      "Built an automated ads.txt crawler and validator that bulk-checks publisher ads.txt files across thousands of domains, cutting compliance-review time by ~70%.",
+      "WOW Performer of the Month three times (Feb, May and Jul 2026)."
     ],
-    skills: ["SQL", "Python (Automation)", "Prebid / VAST / oRTB", "Yield Analysis", "Power BI"]
+    skills: ["GAM360", "DV360", "Prebid / VAST / oRTB", "Magnite", "Amazon Publisher Services", "Adipolo", "Floor Price Optimization", "Python (Automation)", "SQL"]
   },
   {
-    title: "Statistical Analyst – Internship",
-    company: "Indian Sugar & Bio-energy Association (ISMA), New Delhi (On-Site)",
+    title: "Data Analyst – Internship",
+    company: "Indian Sugar & Bio-energy Manufacturers Association (ISMA), New Delhi (On-Site)",
     duration: "Jul 2024 - Jan 2025",
     description: [
-      "Delivered pan-India sugar and ethanol data analysis for 150+ mills, driving strategic decisions for manager & director-level stakeholders.",
-      "Co-developed the Statistics Handbook 2023-24 (150+ pages), ensuring error-free delivery to 500+ industry stakeholders.",
-      "Established robust validation protocols, reducing reporting errors by 25%.",
-      "Automated 5+ reporting processes using Advanced Excel and Python, reducing manual work by 40%."
+      "Delivered pan-India sugar and ethanol data analysis for 150+ mills, driving strategic decisions for manager and director-level stakeholders across the bio-energy sector.",
+      "Automated 15+ reporting processes using Advanced Excel and Python, reducing manual work by 40% and streamlining weekly workflows."
     ],
     skills: ["Advanced Excel", "Data Analysis", "Python (Automation)"]
   },
