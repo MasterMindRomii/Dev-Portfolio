@@ -3,7 +3,6 @@ import Hero from "@/components/Hero";
 import Scripts from "@/components/Scripts";
 import Navigation from "@/components/Navigation";
 import SpotlightBackground from "@/components/SpotlightBackground";
-import Quote from "@/components/Quote";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Experience from "@/components/Experience";
@@ -21,10 +20,6 @@ export default function Home() {
       <Hero />
 
       <SpotlightBackground />
-      
-      <ScrollSection id="about">
-        <Quote />
-      </ScrollSection>
       
       {/* Experience first */}
       <ScrollSection id="experience">
