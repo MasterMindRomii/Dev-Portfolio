@@ -7,6 +7,7 @@ import Quote from "@/components/Quote";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Experience from "@/components/Experience";
+import Education from "@/components/Education";
 import Blog from "@/components/Blog";
 import Footer from "@/components/Footer";
 import ScrollSection from "@/components/ScrollSection";
@@ -28,6 +29,11 @@ export default function Home() {
       {/* Experience first */}
       <ScrollSection id="experience">
         <Experience />
+      </ScrollSection>
+
+      {/* Education after experience */}
+      <ScrollSection id="education">
+        <Education />
       </ScrollSection>
 
       {/* Skills second */}
